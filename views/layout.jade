@@ -1,0 +1,29 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/css/style.css')
+    link(rel='stylesheet', href='/css/bootstrap.min.css')
+    script(type='text/javascript',src='/js/jquery.min.js')
+    script(type='text/javascript',src='/js/bootstrap.min.js')
+    script(type='text/javascript',src='/js/angular.js')
+    
+    
+  body
+    .navbar.navbar-inverse
+      .container-fluid
+        .navbar-header
+          a.navbar-brand(href='#') WebSiteName
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='#myNavbar')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+            
+        #myNavbar.navbar-collapse.collapse
+          ul.nav.navbar-nav
+            li: a(href='#') Blog ground
+            li: a(href='#') Sign in
+            li: a(href='#') Sign up
+          ul.nav.navbar-nav.navbar-right
+            li: a(href='#') aaaa
+    block content

@@ -1,0 +1,8 @@
+block postList
+  each post in posts
+    h2=post.title
+    p:ul
+      each tag in post.tags
+        li:span=tag+' '
+    p=post.post
+    p Post by #{post.name}
