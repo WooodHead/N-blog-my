@@ -1,0 +1,24 @@
+include ./simpleHeader.jade
+
+body
+  .container
+    h2 Please sign in
+    form.form-horizontal
+      .form-group
+        label.control-label.col-sm-2(for='email') Email:
+        .col-sm-10
+          input.form-control(name='name', type='email', placeholder='Email address')
+      .form-group
+        label.control-label.col-sm-2 Password:
+        .col-sm-10
+          input.form-control(name='password', type='password',placeholder='Password')
+      .form-group
+        .col-sm-offset-2.col-sm-10
+          .checkbox
+            label Remember me
+              input(type='checkbox')
+      .form-group
+        .col-sm-offset-2.col-sm-10
+          button.btn.btn-large.btn-primary(type='submit') Sign in
+      
+      
